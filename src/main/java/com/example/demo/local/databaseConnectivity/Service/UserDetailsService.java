@@ -25,4 +25,8 @@ public class UserDetailsService {
     {
         userDetailsRepository.save(userDetails);
     }
+    public void deleteEntries(int id)
+    {
+        userDetailsRepository.deleteById(id);
+    }
 }

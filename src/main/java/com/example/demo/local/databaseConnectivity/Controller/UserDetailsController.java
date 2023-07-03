@@ -28,4 +28,9 @@ public class UserDetailsController {
     {
         userDetailsService.addEntries(userDetails);
     }
+    @RequestMapping(method = RequestMethod.GET,value = "/deleteEntryBasedOnID")
+    public void deleteEntry(@RequestParam int id)
+    {
+        userDetailsService.deleteEntries(id);
+    }
 }
