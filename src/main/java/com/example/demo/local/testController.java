@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class testController {
     @RequestMapping(method = RequestMethod.GET,value = "/helloWorld")
-    public static String helloWorld()
+    public  String helloWorld()
     {
         int a=0;
         int b=1;
@@ -17,10 +17,6 @@ public class testController {
         int d=a*c;
 
         return "Deepak";
-    }
-
-    public static void main(String[] args) {
-        helloWorld();
     }
 
 }
